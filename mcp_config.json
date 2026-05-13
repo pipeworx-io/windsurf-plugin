@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "pipeworx": {
+      "serverUrl": "https://gateway.pipeworx.io/pipeworx-catalog/mcp"
+    }
+  }
+}
