@@ -1,6 +1,6 @@
 # Pipeworx Windsurf Install Kit
 
-Connect Windsurf (Cascade) to live data from **2,325 tools across 555 packs** — SEC filings, USPTO patents, FRED economic data, FDA drug data, Census, EPA, ATTOM real estate, weather, and 547+ more.
+Connect Windsurf (Cascade) to live data from **2,506 tools across 575 packs** — SEC filings, USPTO patents, FRED economic data, FDA drug data, Census, EPA, ATTOM real estate, weather, and 567+ more.
 
 Backed by the [Pipeworx](https://pipeworx.io) MCP gateway at `gateway.pipeworx.io`.
 
@@ -42,7 +42,7 @@ Cascade should call `ask_pipeworx` (which routes to `fred_get_series`) and retur
 
 ## How it works
 
-The install loads **17 meta-tools** from the Pipeworx gateway — not all 2,325 underlying tools. That's deliberate: dumping every tool definition into the context window burns tokens you'll never use.
+The install loads **17 meta-tools** from the Pipeworx gateway — not all 2,506 underlying tools. That's deliberate: dumping every tool definition into the context window burns tokens you'll never use.
 
 The loaded meta-tools:
 
