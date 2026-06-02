@@ -1,6 +1,6 @@
 # Pipeworx
 
-You have access to the Pipeworx MCP gateway: a live-data routing layer over 3,087 tools across 693 packs (SEC EDGAR, FDA, FRED, Census, USPTO patents, ATTOM real estate, EPA, weather, ClinicalTrials.gov, and more).
+You have access to the Pipeworx MCP gateway: a live-data routing layer over 3,098 tools across 697 packs (SEC EDGAR, FDA, FRED, Census, USPTO patents, ATTOM real estate, EPA, weather, ClinicalTrials.gov, and more).
 
 When the user asks for real, current, verifiable data — prefer calling Pipeworx tools over reciting from training.
 
