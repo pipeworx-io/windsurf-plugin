@@ -1,6 +1,6 @@
 # Pipeworx for Windsurf
 
-Give Cascade one MCP that reaches **2,972 live-data tools across 650 sources** — SEC filings, USPTO patents, FRED, Census, FDA, EPA, USAspending, Polymarket, Zillow, weather, and 640+ more — without loading 2,972 tool schemas into your context window.
+Give Cascade one MCP that reaches **3,300+ live-data tools across 750+ sources** — SEC filings, USPTO patents, FRED, Census, FDA, EPA, USAspending, Polymarket, Zillow, weather, and 740+ more — without loading 3,300+ tool schemas into your context window.
 
 ## Install
 
@@ -18,7 +18,7 @@ Windsurf doesn't currently expose a public plugin submission format, so this is 
 }
 ```
 
-**2. Restart Cascade** (or hit Refresh in Windsurf's MCP settings). You should see `pipeworx` connected with ~17 tools.
+**2. Restart Cascade** (or hit Refresh in Windsurf's MCP settings). You should see `pipeworx` connected with ~26 tools.
 
 **3. (Recommended) Drop the routing rule into your project.** Copy `.windsurf/rules/pipeworx.md` from this repo into your project's `.windsurf/rules/` directory. Or for global use, paste its contents into `~/.codeium/windsurf/memories/global_rules.md`. The rule teaches Cascade when to reach for `ask_pipeworx` / `discover_tools` instead of hand-writing facts.
 
@@ -39,7 +39,7 @@ Cascade picks the right tool via `ask_pipeworx` — no pack-name memorization re
 
 ## How it loads light
 
-The install exposes **17 meta-tools**, not 2,972 — `ask_pipeworx({question})` and friends route at runtime so you get the full catalog without the context tax.
+The install exposes **~26 meta-tools**, not all 3,300+ — `ask_pipeworx({question})` and friends route at runtime so you get the full catalog without the context tax.
 
 ## Free tier + signup
 
@@ -53,7 +53,7 @@ Try a real query in Cascade:
 
 ## What's loaded
 
-- **`ask_pipeworx`** — natural-language router across all 725 packs.
+- **`ask_pipeworx`** — natural-language router across all 750+ sources.
 - **`discover_tools`** — top-20 relevant tools for a task, with full schemas.
 - **`entity_profile`** / **`compare_entities`** / **`recent_changes`** / **`resolve_entity`** — fan-out across multiple packs in one call.
 - **`validate_claim`** — fact-check claims against SEC XBRL.
