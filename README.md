@@ -43,7 +43,7 @@ The install exposes **~26 meta-tools**, not all 3,300+ — `ask_pipeworx({questi
 
 ## Free tier + signup
 
-100 calls/day anonymous, IP-bound. [Sign up free in 10s via GitHub](https://pipeworx.io/signup?via=windsurf_plugin) for 2,000/day + a stable account.
+100 calls/day anonymous, IP-bound. [Sign up free in 10s via GitHub](https://pipeworx.io/signup?via=windsurf_plugin) for 200/day + a stable account.
 
 ## Verify after install
 
@@ -76,7 +76,7 @@ For a specific pack's tools loaded directly (e.g., `attom_property_search`), add
 
 ## Bring your own key
 
-For BYO-tier (500/day), add `?_apikey=YOUR_KEY` to `serverUrl` (Windsurf's remote-MCP config doesn't reliably honor headers yet across versions).
+For BYO-tier (200/day), add `?_apikey=YOUR_KEY` to `serverUrl` (Windsurf's remote-MCP config doesn't reliably honor headers yet across versions).
 
 ## Submitting to Windsurf's Plugin Store
 
