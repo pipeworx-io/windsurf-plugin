@@ -1,6 +1,6 @@
 # Pipeworx for Windsurf
 
-Give Cascade one MCP that reaches **5,501+ live-data tools across 1,441+ sources** — SEC filings, USPTO patents, FRED, Census, FDA, EPA, USAspending, Polymarket, Zillow, weather, and 1,433+ more — without loading 5,501+ tool schemas into your context window.
+Give Cascade one MCP that reaches **5,581+ live-data tools across 1,463+ sources** — SEC filings, USPTO patents, FRED, Census, FDA, EPA, USAspending, Polymarket, Zillow, weather, and 1,455+ more — without loading 5,581+ tool schemas into your context window.
 
 ## Install
 
@@ -12,13 +12,17 @@ Windsurf doesn't currently expose a public plugin submission format, so this is 
 {
   "mcpServers": {
     "pipeworx": {
-      "serverUrl": "https://gateway.pipeworx.io/pipeworx-catalog/mcp"
+      "serverUrl": "https://gateway.pipeworx.io/oauth/mcp"
     }
   }
 }
 ```
 
-**2. Restart Cascade** (or hit Refresh in Windsurf's MCP settings). You should see `pipeworx` connected with ~26 tools.
+Sign in with GitHub when Cascade prompts — it is free and takes you to 200 tool
+calls a day. No account? Use `https://gateway.pipeworx.io/pipeworx-catalog/mcp`
+instead — same connection, 50 calls a day.
+
+**2. Restart Cascade** (or hit Refresh in Windsurf's MCP settings). You should see `pipeworx` connected with ~38 tools.
 
 **3. (Recommended) Drop the routing rule into your project.** Copy `.windsurf/rules/pipeworx.md` from this repo into your project's `.windsurf/rules/` directory. Or for global use, paste its contents into `~/.codeium/windsurf/memories/global_rules.md`. The rule teaches Cascade when to reach for `ask_pipeworx` / `discover_tools` instead of hand-writing facts.
 
@@ -39,7 +43,7 @@ Cascade picks the right tool via `ask_pipeworx` — no pack-name memorization re
 
 ## How it loads light
 
-The install exposes **~31 meta-tools**, not all 5,501+ — `ask_pipeworx({question})` and friends route at runtime so you get the full catalog without the context tax.
+The install exposes **~31 meta-tools**, not all 5,581+ — `ask_pipeworx({question})` and friends route at runtime so you get the full catalog without the context tax.
 
 ## Free tier + signup
 
@@ -53,7 +57,7 @@ Try a real query in Cascade:
 
 ## What's loaded
 
-- **`ask_pipeworx`** — natural-language router across all 1,441+ sources.
+- **`ask_pipeworx`** — natural-language router across all 1,463+ sources.
 - **`discover_tools`** — top-20 relevant tools for a task, with full schemas.
 - **`entity_profile`** / **`compare_entities`** / **`recent_changes`** / **`resolve_entity`** — fan-out across multiple packs in one call.
 - **`validate_claim`** — fact-check claims against SEC XBRL.
