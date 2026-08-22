@@ -47,7 +47,9 @@ The install exposes **~31 meta-tools**, not all 5,581+ — `ask_pipeworx({questi
 
 ## Free tier + signup
 
-50 calls/day anonymous, IP-bound. [Sign up free in 10s via GitHub](https://pipeworx.io/signup?via=windsurf_plugin) for 200/day + a stable account.
+**Signing in is free and takes one GitHub click** — it moves you from 50 calls a day to 200, on a stable account that does not rotate with your IP. Point the server at `https://gateway.pipeworx.io/oauth/mcp` and complete the sign-in when prompted, or [sign up first](https://pipeworx.io/signup?via=windsurf_plugin).
+
+No account at all still works: `https://gateway.pipeworx.io/pipeworx-catalog/mcp`, anonymous, 50 calls a day per IP.
 
 ## Verify after install
 
