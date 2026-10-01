@@ -1,6 +1,6 @@
 # Pipeworx for Windsurf
 
-Give Cascade one MCP that reaches **5,581+ live-data tools across 1,463+ sources** — SEC filings, USPTO patents, FRED, Census, FDA, EPA, USAspending, Polymarket, Zillow, weather, and 1,455+ more — without loading 5,581+ tool schemas into your context window.
+Give Cascade one MCP that reaches **6,453+ live-data tools across 1,682+ sources** — SEC filings, USPTO patents, FRED, Census, FDA, EPA, USAspending, Polymarket, Zillow, weather, and 1,674+ more — without loading 6,453+ tool schemas into your context window.
 
 ## Install
 
@@ -43,7 +43,7 @@ Cascade picks the right tool via `ask_pipeworx` — no pack-name memorization re
 
 ## How it loads light
 
-The install exposes **~31 meta-tools**, not all 5,581+ — `ask_pipeworx({question})` and friends route at runtime so you get the full catalog without the context tax.
+The install exposes **~36 meta-tools**, not all 6,453+ — `ask_pipeworx({question})` and friends route at runtime so you get the full catalog without the context tax.
 
 ## Free tier + signup
 
@@ -59,7 +59,7 @@ Try a real query in Cascade:
 
 ## What's loaded
 
-- **`ask_pipeworx`** — natural-language router across all 1,463+ sources.
+- **`ask_pipeworx`** — natural-language router across all 1,682+ sources.
 - **`discover_tools`** — top-20 relevant tools for a task, with full schemas.
 - **`entity_profile`** / **`compare_entities`** / **`recent_changes`** / **`resolve_entity`** — fan-out across multiple packs in one call.
 - **`validate_claim`** — fact-check claims against SEC XBRL.
